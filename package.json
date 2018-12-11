@@ -1,6 +1,6 @@
 {
   "name": "keksobooking",
-  "version": "15.0.0",
+  "version": "14.0.0",
   "private": true,
   "description": "Личный проект «Кексобукинг» от HTML Academy",
   "repository": {
@@ -11,7 +11,7 @@
     "url": "https://github.com/htmlacademy-javascript/636285-keksobooking/issues"
   },
   "devDependencies": {
-    "eslint": "5.7.0",
+    "eslint": "4.19.1",
     "eslint-config-htmlacademy": "0.5.2"
   },
   "license": "MIT",

@@ -1,7 +1,7 @@
 # Личный проект «Кексобукинг» [![Build status][travis-image]][travis-url]
 
-* Студент: [Василий Барков](https://up.htmlacademy.ru/javascript/16/user/636285).
-* Наставник: `Неизвестно`.
+* Студент: [Василий Барков](https://up.htmlacademy.ru/javascript/14/user/636285).
+* Наставник: [Катя Матя](https://up.htmlacademy.ru/htmlcss/20/user/84950)
 
 ---
 
@@ -48,5 +48,5 @@ git clone SSH-адрес_вашего_форка
 
 Репозиторий создан для обучения на интенсивном онлайн‑курсе «[Профессиональный JavaScript](https://htmlacademy.ru/intensive/javascript)», уровень 1 от [HTML Academy](https://htmlacademy.ru).
 
-[travis-image]: https://travis-ci.com/htmlacademy-javascript/636285-keksobooking.svg?branch=master
-[travis-url]: https://travis-ci.com/htmlacademy-javascript/636285-keksobooking
+[travis-image]: https://travis-ci.org/htmlacademy-javascript/636285-keksobooking.svg?branch=master
+[travis-url]: https://travis-ci.org/htmlacademy-javascript/636285-keksobooking
