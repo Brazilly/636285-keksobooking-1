@@ -22,8 +22,9 @@
     var elementPin = mapPinTemplate.cloneNode(true);
 
     elementPin.style = 'left: ' + (pin.location.x - PIN_WIDTH / 2) + 'px;' + ' top: ' + (pin.location.y - PIN_HEIGHT) + 'px';
-    elementPin.querySelector('img').src = pin.author.avatar;
-    elementPin.querySelector('img').alt = pin.offer.title;
+    var elementPinImg = elementPin.querySelector('img');
+    elementPinImg.src = pin.author.avatar;
+    elementPinImg.alt = pin.offer.title;
 
     elementPin.addEventListener('click', function () {
       var testCard = cityMap.querySelector('.map__card');
@@ -50,7 +51,7 @@
     window.pins = pins;
     var fragmentPins = document.createDocumentFragment();
     for (var i = 0; i < 5; i++) {
-      fragmentPins.appendChild(window.renderpins.renderPin(pins[i]));
+      fragmentPins.appendChild(window.renderPins.renderPin(pins[i]));
     }
     mapPin.appendChild(fragmentPins);
 
@@ -70,9 +71,9 @@
     var errorButton = document.querySelector('.error');
     errorButton.addEventListener('click', function () {
       main.removeChild(elementError);
-      window.backend.load(window.renderpins.successHandler, window.renderpins.errorHandler);
+      window.backend.load(window.renderPins.successHandler, window.renderPins.errorHandler);
     });
-    document.addEventListener('click', window.citymap.onDocumentClick);
+    document.addEventListener('click', window.cityMap.onDocumentClick);
   }
 
   // Обработчик Change на селектах фильтра
@@ -180,7 +181,7 @@
     var fragmentPins = document.createDocumentFragment();
 
     [].forEach.call(firstFiveFiltredPins, function (pin) {
-      fragmentPins.appendChild(window.renderpins.renderPin(pin));
+      fragmentPins.appendChild(window.renderPins.renderPin(pin));
     });
     var renderedCard = cityMap.querySelector('article');
     if (renderedCard) {
@@ -190,7 +191,7 @@
     mapPin.appendChild(fragmentPins);
   }
 
-  window.renderpins = {
+  window.renderPins = {
     renderPin: renderPin,
     successHandler: successHandler,
     errorHandler: errorHandler

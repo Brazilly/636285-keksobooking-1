@@ -89,10 +89,10 @@
       var elementSuccess = successTemplate.cloneNode(true);
       main.appendChild(elementSuccess);
     }, function (errorMessage) {
-      window.renderpins.errorHandler(errorMessage);
+      window.renderPins.errorHandler(errorMessage);
     });
-    window.citymap.restartPage();
-    document.addEventListener('click', window.citymap.onDocumentClick);
+    window.cityMap.restartPage();
+    document.addEventListener('click', window.cityMap.onDocumentClick);
     evt.preventDefault();
   });
 

@@ -75,7 +75,7 @@
     if (elementError) {
       main.removeChild(elementError);
     }
-    document.removeEventListener('click', window.citymap.onDocumentClick);
+    document.removeEventListener('click', window.cityMap.onDocumentClick);
   };
 
   // Заблокировать форму до активации карты Токио
@@ -99,7 +99,7 @@
     [].forEach.call(formFieldsets, function (item) {
       item.disabled = '';
     });
-    window.backend.load(window.renderpins.successHandler, window.renderpins.errorHandler);
+    window.backend.load(window.renderPins.successHandler, window.renderPins.errorHandler);
     mapPinMain.removeEventListener('mouseup', onButtonMouseUp);
   };
   mapPinMain.addEventListener('mouseup', onButtonMouseUp);
@@ -176,7 +176,7 @@
     document.addEventListener('mouseup', onMouseUp);
   });
 
-  window.citymap = {
+  window.cityMap = {
     onDocumentClick: onDocumentClick,
     restartPage: restartPage
   };
